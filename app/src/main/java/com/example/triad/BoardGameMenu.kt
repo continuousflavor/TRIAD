@@ -13,6 +13,7 @@ class BoardGameMenu : AppCompatActivity() {
         setContentView(R.layout.activity_board_game_menu)
 
         // added a button to test
+        // and added a new comment
       button2.setOnClickListener{
           val intent = Intent(this,BoardGameList::class.java)
             startActivity(intent)
