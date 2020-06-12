@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">TRIAD</string>
+    
+    <string-array name="game_list_icons">
+        <item>board games</item>
+        <item>brain games</item>
+        <item>video games</item>
+    </string-array>
+
+    <string-array name="game_list_labels">
+        <item>board games</item>
+        <item>brain games</item>
+        <item>video games</item>
+    </string-array>
+
+
 </resources>
