@@ -8,9 +8,19 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_games" />
+
+    <ImageView
         android:id="@+id/imageView"
-        android:layout_width="370dp"
-        android:layout_height="625dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="#00000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,12 +28,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".5"
-        app:srcCompat="@drawable/background" />
+        app:srcCompat="@drawable/background_blank_menu" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="370dp"
-        android:layout_height="345dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,7 +58,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/button_menu" />
+        app:srcCompat="@drawable/button_main_menu" />
 
     <Button
         android:id="@+id/button2"
@@ -60,7 +70,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.193" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
