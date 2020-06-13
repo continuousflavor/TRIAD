@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/game_title"
                 android:text="The Title of a Game"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
                 android:textSize="19sp"
             />
 
