@@ -25,7 +25,7 @@ class GameListRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         when(holder){
 
             is GamesListViewHolder ->{
-                holder.bind(items.get(position))
+                holder.bind(items[position])
             }
         }
     }
@@ -42,14 +42,14 @@ class GameListRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         itemView: View
     ): RecyclerView.ViewHolder(itemView){
 
-        val gameImage :ImageView = itemView.game_image
-        val gameTitle :TextView = itemView.game_title
-        val gameType :TextView = itemView.game_type
+        private val gameImage :ImageView = itemView.game_image
+        private val gameTitle :TextView = itemView.game_title
+        private val gameType :TextView = itemView.game_type
 
         fun bind(gameList: GameList){
 
-            gameTitle.setText(gameList.title)
-            gameType.setText(gameList.genre)
+            gameTitle.text = gameList.title
+            gameType.text = gameList.genre
 
             val requestOptions = RequestOptions()
                 .placeholder(R.drawable.ic_launcher_background)
