@@ -45,11 +45,13 @@ class GameListRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         private val gameImage :ImageView = itemView.game_image
         private val gameTitle :TextView = itemView.game_title
         private val gameType :TextView = itemView.game_type
+        private val gameRating :TextView = itemView.game_rating
 
         fun bind(gameList: GameList){
 
             gameTitle.text = gameList.title
             gameType.text = gameList.genre
+            gameRating.text = gameList.rating
 
             val requestOptions = RequestOptions()
                 .placeholder(R.drawable.ic_launcher_background)

@@ -22,11 +22,11 @@
             android:adjustViewBounds="true"
             android:padding="0dp"
             android:scaleType="fitXY"
-            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:contentDescription="@string/gameImage" />
-        
+            android:contentDescription="@+id/game_image" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -55,6 +55,15 @@
                 android:textSize="15sp"
                 android:layout_marginTop="10dp"
              />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/game_rating"
+                android:text="Game Rating"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                />
 
         </LinearLayout>
 

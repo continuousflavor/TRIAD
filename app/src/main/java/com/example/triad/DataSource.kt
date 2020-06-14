@@ -12,7 +12,7 @@ class DataSource {
                 GameList(
                     "Lords of Waterdeep",
                     "Board Game",
-                    "https://github.com/continuousflavor/TRIAD/blob/master/lords_of_waterdeep.png",
+                    "https://media.dnd.wizards.com/styles/product_tabletop_left/public/images/product/DnD_LOW.png",
                     "5 Stars"
 
                 )
@@ -21,7 +21,7 @@ class DataSource {
                 GameList(
                     "Imperial Assault",
                     "Board Game",
-                    "https://github.com/continuousflavor/TRIAD/blob/master/imperial_assault.png",
+                    "https://raw.githubusercontent.com/continuousflavor/TRIAD/blob/master/imperial_assault.png?raw=true",
                     "4.5 Stars"
 
                 )
@@ -30,7 +30,7 @@ class DataSource {
                 GameList(
                     "Runebound",
                     "Board Game",
-                    "https://github.com/continuousflavor/TRIAD/blob/master/runebound.png",
+                    "https://github.com/continuousflavor/TRIAD/blob/master/runebound.png?raw=true",
                     "4.5 Stars"
 
                 )
