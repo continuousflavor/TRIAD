@@ -21,7 +21,7 @@ class DataSource {
                 GameList(
                     "Imperial Assault",
                     "Board Game",
-                    "https://raw.githubusercontent.com/continuousflavor/TRIAD/blob/master/imperial_assault.png?raw=true",
+                    "https://github.com/continuousflavor/TRIAD/master/imperial_assault.png",
                     "4.5 Stars"
 
                 )
@@ -30,7 +30,16 @@ class DataSource {
                 GameList(
                     "Runebound",
                     "Board Game",
-                    "https://github.com/continuousflavor/TRIAD/blob/master/runebound.png?raw=true",
+                    "https://github.com/continuousflavor/TRIAD/master/runebound.png",
+                    "4.5 Stars"
+
+                )
+            )
+            list.add(
+                GameList(
+                    "The Settlers of Catan",
+                    "Board Game",
+                    "https://github.com/continuousflavor/TRIAD/master/runebound.png",
                     "4.5 Stars"
 
                 )
