@@ -11,36 +11,36 @@ class DataSource {
             list.add(
                 GameList(
                     "Lords of Waterdeep",
-                    "worker placement",
+                    "Fantasy worker placement",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/lords_of_waterdeep.png",
-                    "5 stars"
+                    "5/5 stars (378)"
 
                 )
             )
             list.add(
                 GameList(
                     "Imperial Assault",
-                    "dungeon crawler",
+                    "Sci-fi dungeon crawler",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/imperial_assault.png",
-                    "4.5 stars"
+                    "4.5/5 stars (98)"
 
                 )
             )
             list.add(
                 GameList(
                     "Runebound",
-                    "RPG",
+                    "Fantasy action RPG",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/runebound.png",
-                    "4.5 stars"
+                    "4.5/5 stars (184)"
 
                 )
             )
             list.add(
                 GameList(
                     "Mage Knight",
-                    "RPG",
+                    "Fantasy action RPG",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/mage_knight.png",
-                    "4.5 stars"
+                    "4.5/5 stars (32)"
 
                 )
             )
