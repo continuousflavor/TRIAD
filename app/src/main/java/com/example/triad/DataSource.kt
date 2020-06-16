@@ -11,36 +11,36 @@ class DataSource {
             list.add(
                 GameList(
                     "Lords of Waterdeep",
-                    "Board Game",
-                    "https://media.dnd.wizards.com/styles/product_tabletop_left/public/images/product/DnD_LOW.png",
-                    "5 Stars"
+                    "worker placement",
+                    "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/lords_of_waterdeep.png",
+                    "5 stars"
 
                 )
             )
             list.add(
                 GameList(
                     "Imperial Assault",
-                    "Board Game",
-                    "https://github.com/continuousflavor/TRIAD/master/imperial_assault.png",
-                    "4.5 Stars"
+                    "dungeon crawler",
+                    "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/imperial_assault.png",
+                    "4.5 stars"
 
                 )
             )
             list.add(
                 GameList(
                     "Runebound",
-                    "Board Game",
-                    "https://github.com/continuousflavor/TRIAD/master/runebound.png",
-                    "4.5 Stars"
+                    "RPG",
+                    "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/runebound.png",
+                    "4.5 stars"
 
                 )
             )
             list.add(
                 GameList(
-                    "The Settlers of Catan",
-                    "Board Game",
-                    "https://github.com/continuousflavor/TRIAD/master/runebound.png",
-                    "4.5 Stars"
+                    "Mage Knight",
+                    "RPG",
+                    "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/mage_knight.png",
+                    "4.5 stars"
 
                 )
             )
