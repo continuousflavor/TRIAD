@@ -44,6 +44,24 @@ class DataSource {
 
                 )
             )
+            list.add(
+                GameList(
+                    "Dominion",
+                    "Deck builder",
+                    "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/dominion.png",
+                    "4/5 stars (261)"
+
+                )
+            )
+            list.add(
+                GameList(
+                    "7 Wonders",
+                    "Deck builder",
+                    "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/seven_wonders.png",
+                    "5/5 stars (1003)"
+
+                )
+            )
             return list
         }
     }
