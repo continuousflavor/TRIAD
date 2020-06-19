@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">TRIAD</string>
     <string name="gameImage">gameImage</string>
+    <string name="button_home">button_home</string>
+    <string name="button_main_menu">button_main_menu</string>
 
     <string-array name="game_list_icons">
         <item>board games</item>

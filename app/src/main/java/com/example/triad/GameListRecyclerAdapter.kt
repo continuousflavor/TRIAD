@@ -65,5 +65,8 @@ class GameListRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
     }
 
+    
+
+
 
 }

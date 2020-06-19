@@ -28,7 +28,7 @@ class BoardGameList : AppCompatActivity() {
     private fun initRecyclerView(){
         recycler_view.apply {
             layoutManager = LinearLayoutManager(this@BoardGameList)
-            val topSpacingItemDecoration = TopSpacingItemDecoration(30)
+            val topSpacingItemDecoration = TopSpacingItemDecoration(20)
             addItemDecoration(topSpacingItemDecoration)
             gameAdapter = GameListRecyclerAdapter()
             adapter = gameAdapter
