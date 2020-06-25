@@ -1,13 +1,16 @@
 package com.example.triad
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import kotlinx.android.synthetic.main.activity_board_game_menu.*
 import kotlinx.android.synthetic.main.layout_game_list_item.view.*
 import models.GameList
 
@@ -47,6 +50,7 @@ class GameListRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         private val gameType :TextView = itemView.game_type
         private val gameRating :TextView = itemView.game_rating
 
+
         fun bind(gameList: GameList){
 
             gameTitle.text = gameList.title
@@ -61,11 +65,22 @@ class GameListRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
                 .applyDefaultRequestOptions(requestOptions)
                 .load(gameList.image)
                 .into(gameImage)
+
+
+            }
+
+        init {
+            gameImage.setOnClickListener {
+                val intent = Intent(gameImage.context, BoardGameInfo::class.java)
+
+                gameImage.context.startActivity(intent)
+            }
+
         }
 
     }
 
-    
+
 
 
 
