@@ -4,8 +4,8 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_board_game_info.*
 
-@SuppressLint("Registered")
 class BoardGameInfo  : AppCompatActivity() {
 
     private lateinit var gameAdapter: GameItemRecyclerAdapter
@@ -25,11 +25,11 @@ class BoardGameInfo  : AppCompatActivity() {
     }
 
     private fun initRecyclerView(){
-        recycler_view.apply {
-            layoutManager = LinearLayoutManager(this@BoardGameList)
+        game_item_recycler_view.apply {
+            layoutManager = LinearLayoutManager(this@BoardGameInfo)
             val topSpacingItemDecoration = TopSpacingItemDecoration(20)
             addItemDecoration(topSpacingItemDecoration)
-            gameAdapter = GameListRecyclerAdapter()
+            gameAdapter = GameItemRecyclerAdapter()
             adapter = gameAdapter
 
         }

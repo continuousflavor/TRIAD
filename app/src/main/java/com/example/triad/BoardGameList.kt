@@ -1,13 +1,12 @@
 package com.example.triad
 
 import android.os.Bundle
-import android.widget.Adapter
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_board_game_list.*
 
 class BoardGameList : AppCompatActivity() {
+
 
     private lateinit var gameAdapter: GameListRecyclerAdapter
 
@@ -25,8 +24,8 @@ class BoardGameList : AppCompatActivity() {
         gameAdapter.submitList(data)
     }
 
-    private fun initRecyclerView(){
-        recycler_view.apply {
+    private fun initRecyclerView() {
+            game_list_recycler_view.apply {
             layoutManager = LinearLayoutManager(this@BoardGameList)
             val topSpacingItemDecoration = TopSpacingItemDecoration(20)
             addItemDecoration(topSpacingItemDecoration)
@@ -35,6 +34,9 @@ class BoardGameList : AppCompatActivity() {
 
         }
     }
+
+
+
 
 
 
