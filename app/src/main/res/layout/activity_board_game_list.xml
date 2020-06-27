@@ -28,7 +28,7 @@
         app:srcCompat="@drawable/button_main_menu" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
+        android:id="@+id/game_list_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="8dp"

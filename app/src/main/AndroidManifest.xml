@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".BoardGameMenu" />
-        <activity android:name=".BoardGameList" />
+        <activity android:name=".BoardGameList"
+            android:launchMode="singleTop"/>
         <activity android:name=".BoardGameInfo" />
 
     </application>
