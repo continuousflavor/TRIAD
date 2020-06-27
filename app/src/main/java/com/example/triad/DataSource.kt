@@ -13,7 +13,8 @@ class DataSource {
                     "Lords of Waterdeep",
                     "Fantasy worker placement",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/lords_of_waterdeep.png",
-                    "5/5 stars (378)"
+                    "5/5 stars (378)",
+                    "Dungeons and Dragons"
 
                 )
             )
@@ -22,7 +23,8 @@ class DataSource {
                     "Imperial Assault",
                     "Sci-fi dungeon crawler",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/imperial_assault.png",
-                    "4.5/5 stars (98)"
+                    "4.5/5 stars (98)",
+                    "Star Wars"
 
                 )
             )
@@ -31,7 +33,8 @@ class DataSource {
                     "Runebound",
                     "Fantasy action RPG",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/runebound.png",
-                    "4.5/5 stars (184)"
+                    "4.5/5 stars (184)",
+                    "Runebound Universe"
 
                 )
             )
@@ -40,7 +43,8 @@ class DataSource {
                     "Mage Knight",
                     "Fantasy action RPG",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/mage_knight.png",
-                    "4.5/5 stars (32)"
+                    "4.5/5 stars (32)",
+                    "Created by Vlaada Chvatil"
 
                 )
             )
@@ -49,7 +53,9 @@ class DataSource {
                     "Dominion",
                     "Deck builder",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/dominion.png",
-                    "4/5 stars (261)"
+                    "4/5 stars (261)",
+                    "Game Info"
+
 
                 )
             )
@@ -58,7 +64,8 @@ class DataSource {
                     "7 Wonders",
                     "Deck builder",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/seven_wonders.png",
-                    "5/5 stars (1003)"
+                    "5/5 stars (1003)",
+                    "Game Info"
 
                 )
             )

@@ -8,7 +8,9 @@ data class GameList(
 
     var image: String,
 
-    var rating: String
+    var rating: String,
+
+    var info: String
 
 
 
