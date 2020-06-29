@@ -8,7 +8,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import kotlinx.android.synthetic.main.layout_game_info_item.view.*
 import kotlinx.android.synthetic.main.layout_game_list_item.view.*
+import kotlinx.android.synthetic.main.layout_game_list_item.view.game_image
+import kotlinx.android.synthetic.main.layout_game_list_item.view.game_rating
+import kotlinx.android.synthetic.main.layout_game_list_item.view.game_title
+import kotlinx.android.synthetic.main.layout_game_list_item.view.game_type
 import models.GameList
 
 class GameItemRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
@@ -49,6 +54,7 @@ class GameItemRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
         private val gameImage : ImageView = itemView.game_image
         private val gameTitle : TextView = itemView.game_title
         private val gameType : TextView = itemView.game_type
+        private val gameInfo : TextView = itemView.game_info
         private val gameRating : TextView = itemView.game_rating
 
 
@@ -57,6 +63,7 @@ class GameItemRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() 
             gameTitle.text = gameList.title
             gameType.text = gameList.genre
             gameRating.text = gameList.rating
+            gameInfo.text = gameList.info
 
             val requestOptions = RequestOptions()
                 .placeholder(R.drawable.ic_launcher_background)
