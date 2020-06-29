@@ -14,7 +14,4 @@ data class GameList(
 
 
 
-) {
-
-
-}
+)

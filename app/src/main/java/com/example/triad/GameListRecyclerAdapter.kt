@@ -1,9 +1,11 @@
 package com.example.triad
 
 import android.content.Intent
+import android.system.Os.bind
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
@@ -14,22 +16,19 @@ import kotlinx.android.synthetic.main.activity_board_game_menu.*
 import kotlinx.android.synthetic.main.layout_game_list_item.view.*
 import models.GameList
 
-class GameListRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+class GameListRecyclerAdapter(private var items:MutableList<GameList>, val itemClickListener: AdapterView.OnItemClickListener) : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
 
-    private var items: List<GameList> = ArrayList()
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+       override fun onCreateViewHolder(parent: ViewGroup, position: Int): RecyclerView.ViewHolder {
         return GamesListViewHolder(
             LayoutInflater.from(parent.context).inflate(R.layout.layout_game_list_item, parent, false)
+
         )
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        when(holder){
 
-            is GamesListViewHolder ->{
-                holder.bind(items[position])
-            }
+        val items = items.get(position)
+        holder.bind(items.get(position),itemClickListener)
         }
     }
 
@@ -38,7 +37,7 @@ class GameListRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
     }
 
     fun submitList(gameList: List<GameList>){
-        items = gameList
+        items = gameList as MutableList<GameList>
     }
 
     class GamesListViewHolder constructor(
