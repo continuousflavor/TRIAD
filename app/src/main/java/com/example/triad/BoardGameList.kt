@@ -29,7 +29,7 @@ class BoardGameList : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@BoardGameList)
             val topSpacingItemDecoration = TopSpacingItemDecoration(20)
             addItemDecoration(topSpacingItemDecoration)
-            gameAdapter = GameListRecyclerAdapter()
+            gameAdapter = GameListRecyclerAdapter(null)
             adapter = gameAdapter
 
         }

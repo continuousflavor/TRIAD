@@ -1,9 +1,11 @@
 package com.example.triad
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.triad.GameListRecyclerAdapter.GamesListViewHolder.Companion.GAME_TITLE_KEY
 import kotlinx.android.synthetic.main.activity_board_game_info.*
 
 class BoardGameInfo  : AppCompatActivity() {
@@ -14,15 +16,12 @@ class BoardGameInfo  : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_board_game_info)
 
-        initRecyclerView()
-        addDataSet()
+
+        val gameTitle = intent.getIntExtra(GameListRecyclerAdapter.GamesListViewHolder.GAME_TITLE_KEY)
 
     }
 
-    private fun addDataSet(){
-        val data = DataSource.createDataSet()
-        gameAdapter.submitList(data)
-    }
+
 
     private fun initRecyclerView(){
         game_item_recycler_view.apply {
@@ -35,3 +34,13 @@ class BoardGameInfo  : AppCompatActivity() {
         }
     }
 }
+
+private fun Intent.getIntExtra(gameTitleKey: String) {
+
+}
+
+
+
+
+
+
