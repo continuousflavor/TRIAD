@@ -1,6 +1,7 @@
 package com.example.triad
 
 import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -49,13 +50,14 @@ class GameListRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         private val gameTitle :TextView = itemView.game_title
         private val gameType :TextView = itemView.game_type
         private val gameRating :TextView = itemView.game_rating
-
+        private var gameId :Int = 0
 
         fun bind(gameList: GameList){
 
             gameTitle.text = gameList.title
             gameType.text = gameList.genre
             gameRating.text = gameList.rating
+            gameId = gameList.id
 
             val requestOptions = RequestOptions()
                 .placeholder(R.drawable.ic_launcher_background)
@@ -72,6 +74,8 @@ class GameListRecyclerAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
         init {
             gameImage.setOnClickListener {
                 val intent = Intent(gameImage.context, BoardGameInfo::class.java)
+
+                intent.data = Uri.parse("triad:/$gameId")
 
                 gameImage.context.startActivity(intent)
             }
