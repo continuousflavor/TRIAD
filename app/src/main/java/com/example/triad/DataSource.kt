@@ -10,6 +10,7 @@ class DataSource {
             val list = ArrayList<GameList>()
             list.add(
                 GameList(
+                    1,
                     "Lords of Waterdeep",
                     "Fantasy worker placement",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/lords_of_waterdeep.png",
@@ -26,6 +27,7 @@ class DataSource {
             )
             list.add(
                 GameList(
+                    2,
                     "Imperial Assault",
                     "Sci-fi dungeon crawler",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/imperial_assault.png",
@@ -42,6 +44,7 @@ class DataSource {
             )
             list.add(
                 GameList(
+                    3,
                     "Runebound",
                     "Fantasy action RPG",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/runebound.png",
@@ -58,6 +61,7 @@ class DataSource {
             )
             list.add(
                 GameList(
+                    4,
                     "Mage Knight",
                     "Fantasy action RPG",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/mage_knight.png",
@@ -74,6 +78,7 @@ class DataSource {
             )
             list.add(
                 GameList(
+                    5,
                     "Dominion",
                     "Deck builder",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/dominion.png",
@@ -91,6 +96,7 @@ class DataSource {
             )
             list.add(
                 GameList(
+                    6,
                     "7 Wonders",
                     "Deck builder",
                     "https://raw.githubusercontent.com/continuousflavor/TRIAD/master/seven_wonders.png",
