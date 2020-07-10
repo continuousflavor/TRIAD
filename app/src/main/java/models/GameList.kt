@@ -2,6 +2,8 @@ package models
 
 data class GameList(
 
+    var id: Int,
+
     var title: String,
 
     var genre: String,
