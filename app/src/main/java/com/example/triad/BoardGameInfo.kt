@@ -1,35 +1,41 @@
 package com.example.triad
 
 import android.os.Bundle
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import kotlinx.android.synthetic.main.activity_board_game_info.view.*
+import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_board_game_info.*
+import kotlinx.android.synthetic.main.layout_game_info_item.*
 
 
 class BoardGameInfo  : AppCompatActivity() {
 
     private lateinit var cardView: CardView
 
-//    private lateinit var gameAdapter: GameItemRecyclerAdapter
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
         // todo: have this load a view with no recycler, just a linearlayout or card view
         setContentView(R.layout.activity_board_game_info)
 
-        cardView = findViewById(R.id.card_view)!!// todo: you might want to handle this better if the card isn't found
+        cardView = findViewById(R.id.game_info_card_view)!!// todo: you might want to handle this better if the card isn't found
 
 
-//        initRecyclerView()
+
         // find the ID of the item to view
-        val intent = intent
-        val uri = intent.data
+//        val intent = intent
+//        val uri = intent.data
 
         // TODO: fix this so that we don't crash if passed a bad (or no) URI
-        val gameId = uri!!.path!!.toInt()
+//        val gameId = uri!!.path!!.toInt()
 
-        addDataSet(gameId)
+
+//        addDataSet(gameId)
 
     }
 
@@ -39,14 +45,5 @@ class BoardGameInfo  : AppCompatActivity() {
     }
 
 
-//    private fun initRecyclerView(){
-//        game_item_recycler_view.apply {
-//            layoutManager = LinearLayoutManager(this@BoardGameInfo)
-//            val topSpacingItemDecoration = TopSpacingItemDecoration(20)
-//            addItemDecoration(topSpacingItemDecoration)
-//            gameAdapter = GameItemRecyclerAdapter()
-//            adapter = gameAdapter
-//
-//        }
-//    }
+
 }
