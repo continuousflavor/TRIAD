@@ -20,24 +20,22 @@ class BoardGameInfo  : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
 
-        // todo: have this load a view with no recycler, just a linearlayout or card view
         setContentView(R.layout.activity_board_game_info)
 
         cardView = findViewById(R.id.game_info_card_view)!!// todo: you might want to handle this better if the card isn't found
 
 
-
-        // find the ID of the item to view
-//        val intent = intent
-//        val uri = intent.data
+        val intent = intent
+        val uri = intent.data
 
         // TODO: fix this so that we don't crash if passed a bad (or no) URI
-//        val gameId = uri!!.path!!.toInt()
+ //       val gameId = uri!!.path!!.toInt()
 
 
-//        addDataSet(gameId)
+ //       addDataSet(gameId)
 
     }
+
 
     private fun addDataSet(gameId: Int){
         val game = DataSource.gameForId(gameId)!! // todo: handle case where the game is not found
