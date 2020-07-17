@@ -29,10 +29,10 @@ class BoardGameInfo  : AppCompatActivity() {
         val uri = intent.data
 
         // TODO: fix this so that we don't crash if passed a bad (or no) URI
- //       val gameId = uri!!.path!!.toInt()
+        val gameId = uri!!.lastPathSegment!!.toInt()
 
 
- //       addDataSet(gameId)
+        addDataSet(gameId)
 
     }
 
