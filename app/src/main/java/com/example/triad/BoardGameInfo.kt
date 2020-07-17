@@ -8,6 +8,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_board_game_info.*
 import kotlinx.android.synthetic.main.layout_game_info_item.*
 
+class IntentParser {
+    fun gameIdFromIntent(intent: Intent): Int? {
+        // TODO: fix this so that we don't crash if passed a bad (or no) URI
+        return intent.data!!.lastPathSegment!!.toInt()
+    }
+}
 
 class BoardGameInfo  : AppCompatActivity() {
 
@@ -24,24 +30,23 @@ class BoardGameInfo  : AppCompatActivity() {
 
         cardView = findViewById(R.id.game_info_card_view)!!// todo: you might want to handle this better if the card isn't found
 
-
-        val intent = intent
-        val uri = intent.data
-
-        // TODO: fix this so that we don't crash if passed a bad (or no) URI
-        val gameId = uri!!.lastPathSegment!!.toInt()
-
-
-        addDataSet(gameId)
+        val gameId = IntentParser().gameIdFromIntent(intent)
+        if (gameId != null) {
+            println("Loading info for game $gameId")
+            addDataSet(gameId)
+        }
+        else {
+            // todo: add some real error handling and show something useful to the user
+            println("Couldn't get a gameID from $intent")
+        }
 
     }
 
 
     private fun addDataSet(gameId: Int){
         val game = DataSource.gameForId(gameId)!! // todo: handle case where the game is not found
-        //todo: set info on card view
+        println("Loaded info for game $game")
+        // todo: set info on card view
     }
-
-
 
 }
