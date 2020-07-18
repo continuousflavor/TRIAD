@@ -7,6 +7,7 @@ class DataSource {
     companion object{
 
         fun gameForId(gameId: Int): GameList? {
+            println("looking up game for ID $gameId")
             // todo: look game up by ID instead of returning a hardcoded game
             // should call createDataSet and loop over the results and return the first one that matches
             return GameList(
